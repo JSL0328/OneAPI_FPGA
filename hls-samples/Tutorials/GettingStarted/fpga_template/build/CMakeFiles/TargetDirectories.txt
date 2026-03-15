@@ -1,0 +1,10 @@
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/fpga_emu.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/fpga_sim.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/report.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/fpga.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/displayEmulationCompileCommands.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/displaySimulationCompileCommands.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/displayReportCompileCommands.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/displayFPGACompileCommands.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/edit_cache.dir
+/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles/rebuild_cache.dir

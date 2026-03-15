@@ -1,0 +1,13 @@
+{"nodes":[1], "links":[]}
+{"name":"'lambda'()", "id":1, "type":"kernel", "children":[2, 3, 4, 5, 6, 7, 8]}
+{"name":"main_lambda.B0", "id":2, "type":"bb"}
+{"name":"main_lambda.B1", "id":3, "type":"bb", "children":[9]}
+{"name":"Cluster 0", "id":9, "type":"cluster"}
+{"name":"main_lambda.B2", "id":4, "type":"bb", "children":[13]}
+{"name":"Cluster 1", "id":13, "type":"cluster"}
+{"name":"main_lambda.B3", "id":5, "type":"bb"}
+{"name":"main_lambda.B4", "id":6, "type":"bb"}
+{"name":"main_lambda.B5", "id":7, "type":"bb", "children":[46, 49]}
+{"name":"Cluster 2", "id":46, "type":"cluster"}
+{"name":"Cluster 3", "id":49, "type":"cluster"}
+{"name":"main_lambda.B6", "id":8, "type":"bb"}

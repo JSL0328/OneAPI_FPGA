@@ -1,0 +1,266 @@
+<KERNEL_LIST>
+	<PROGRAM_GLOBAL_MEM_SIZE value="0" />
+	<ENABLE_HYPER_OPTIMIZATIONS value="1" />
+	<USE_SYNC_RESET value="1" />
+	<TOP_LEVEL_RESET_EXTENDER value="0" />
+	<ENABLE_STALL_LATENCY value="0" />
+	<ENABLE_ECC value="0" />
+	<RESET_FOR_REUSE value="0" />
+	<GLOBAL_WRITE_LSU_IC_DATA_LATENESS value="0" />
+	<GLOBAL_READ_LSU_IC_DATA_LATENESS value="0" />
+	<GLOBAL_LSU_IC_WIDE_DATA_SLICING value="0" />
+	<ALLOW_HIGH_SPEED_FIFO_USAGE value="0" />
+	<INTERNAL_MEMORIES>
+			<DATA>
+			</DATA>
+	</INTERNAL_MEMORIES>
+	<KERNEL_BUNDLE name="_ZTSZ4mainEUlvE_" kname="main_lambda" compute_units="1">
+	<KERNEL name="_ZTSZ4mainEUlvE_" kname="main_lambda" filename="kernel_hdl/main_lambda/main_lambda_function_wrapper.sv" entity_name="main_lambda_function_wrapper" version="1" cosim_name="" report_name="\27lambda\27\28\29" enable_global_profiling="1" is_streaming="false" use_external_stall_valid="false" use_finish_detector="true" workgroup_invariant="1" workitem_invariant="0" has_global_atomics="0" num_vector_lanes="1" num_profiling_signals="0" cra_size="256" is_stall_free_return="1">
+		<RESOURCE_INFO>
+			<ID value="0" />
+			<AGGREGATE_STATIC_LOCAL_MEM_SIZE value="0" />
+			<MAX_WORK_GROUP_SIZE num="3" values="1, 1, 1" />
+			<REQUIRED_WORK_GROUP_SIZE x="1" y="1" z="1" />
+			<FAST_RELAUNCH_DEPTH value="1" />
+			<MAX_GLOBAL_WORK_DIM value="0" />
+			<USES_GLOBAL_WORK_OFFSET value="1" />
+		</RESOURCE_INFO>
+		<CONFIGURATION>
+			<INTERFACE port="clock_reset" type="clock"/>
+			<INTERFACE port="cra_irq" type="irq"/>
+			<INTERFACE port="cra" type="agent" cosim_name="main_lambda_function_cra_agent" read="1" write="1" width="64" is_volatile="0" size="256" latency="0" config_id="0" base_address="0" />
+		</CONFIGURATION>
+		<REQUIREMENTS>
+			<FILE name="ip/linux64/lib/dspba/Libraries/sv/base/dspba_library_ver.sv" />
+			<FILE name="ip/acl_ecc_pkg.sv" />
+			<FILE name="ip/acl_data_fifo.sv" />
+			<FILE name="ip/acl_fifo.sv" />
+			<FILE name="ip/acl_altera_syncram_wrapped.sv" />
+			<FILE name="ip/acl_scfifo_wrapped.sv" />
+			<FILE name="ip/acl_ecc_decoder.sv" />
+			<FILE name="ip/acl_ecc_encoder.sv" />
+			<FILE name="ip/acl_ll_fifo.sv" />
+			<FILE name="ip/acl_ll_ram_fifo.sv" />
+			<FILE name="ip/acl_valid_fifo_counter.sv" />
+			<FILE name="ip/acl_dspba_valid_fifo_counter.sv" />
+			<FILE name="ip/acl_staging_reg.sv" />
+			<FILE name="ip/hld_fifo.sv" />
+			<FILE name="ip/acl_mid_speed_fifo.sv" />
+			<FILE name="ip/acl_latency_one_ram_fifo.sv" />
+			<FILE name="ip/acl_latency_zero_ram_fifo.sv" />
+			<FILE name="ip/hld_fifo_zero_width.sv" />
+			<FILE name="ip/acl_high_speed_fifo.sv" />
+			<FILE name="ip/acl_low_latency_fifo.sv" />
+			<FILE name="ip/acl_zero_latency_fifo.sv" />
+			<FILE name="ip/acl_fanout_pipeline.sv" />
+			<FILE name="ip/acl_std_synchronizer_nocut.sv" />
+			<FILE name="ip/acl_tessellated_incr_decr_threshold.sv" />
+			<FILE name="ip/acl_tessellated_incr_lookahead.sv" />
+			<FILE name="ip/acl_reset_handler.sv" />
+			<FILE name="ip/acl_lfsr.sv" />
+			<FILE name="ip/acl_mlab_fifo.sv" />
+			<FILE name="ip/acl_parameter_assert.svh" />
+			<FILE name="ip/acl_dspba_buffer.sv" />
+			<FILE name="ip/acl_fast_pipeline.sv" />
+			<FILE name="ip/acl_push.sv" />
+			<FILE name="ip/acl_token_fifo_counter.sv" />
+			<FILE name="ip/acl_full_detector.sv" />
+			<FILE name="ip/acl_tessellated_incr_decr_decr.sv" />
+			<FILE name="ip/acl_loop_admit.sv" />
+			<FILE name="ip/acl_shift_register_no_reset_dont_merge.sv" />
+			<FILE name="ip/lsu_top.sv" />
+			<FILE name="ip/lsu_permute_address.sv" />
+			<FILE name="ip/lsu_pipelined.sv" />
+			<FILE name="ip/lsu_enabled.sv" />
+			<FILE name="ip/lsu_basic_coalescer.sv" />
+			<FILE name="ip/lsu_simple.sv" />
+			<FILE name="ip/lsu_burst_host.sv" />
+			<FILE name="ip/lsu_bursting_load_stores.sv" />
+			<FILE name="ip/lsu_non_aligned_write.sv" />
+			<FILE name="ip/lsu_read_cache.sv" />
+			<FILE name="ip/lsu_atomic.sv" />
+			<FILE name="ip/lsu_prefetch_block.sv" />
+			<FILE name="ip/lsu_wide_wrapper.sv" />
+			<FILE name="ip/lsu_streaming_prefetch.sv" />
+			<FILE name="ip/acl_aligned_burst_coalesced_lsu.sv" />
+			<FILE name="ip/acl_toggle_detect.sv" />
+			<FILE name="ip/acl_debug_mem.sv" />
+			<FILE name="ip/lsu_burst_coalesced_pipelined_write.sv" />
+			<FILE name="ip/lsu_burst_coalesced_pipelined_read.sv" />
+			<FILE name="ip/acl_fifo_stall_valid_lookahead.sv" />
+			<FILE name="ip/hld_global_load_store.sv" />
+			<FILE name="ip/hld_lsu.sv" />
+			<FILE name="ip/hld_lsu_burst_coalescer.sv" />
+			<FILE name="ip/hld_lsu_coalescer_dynamic_timeout.sv" />
+			<FILE name="ip/hld_lsu_data_aligner.sv" />
+			<FILE name="ip/hld_lsu_read_cache.sv" />
+			<FILE name="ip/hld_lsu_read_data_alignment.sv" />
+			<FILE name="ip/hld_lsu_unaligned_controller.sv" />
+			<FILE name="ip/hld_lsu_word_coalescer.sv" />
+			<FILE name="ip/hld_lsu_write_data_alignment.sv" />
+			<FILE name="ip/hld_lsu_write_kernel_downstream.sv" />
+			<FILE name="ip/acl_shift_register_no_reset.sv" />
+			<FILE name="ip/acl_pipeline.sv" />
+			<FILE name="ip/acl_pop.sv" />
+			<FILE name="ip/hld_loop_profiler.sv" />
+			<FILE name="ip/hld_sim_latency_tracker.sv" />
+			<FILE name="ip/acl_loop_limiter.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_function_wrapper.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_function.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B0.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B0_stall_region.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B0_merge_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B0_branch.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B0_merge.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B1.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B1_stall_region.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_s_c0_in_for_cond2_i_pr00004_main_lambda_57_1gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou0000_main_lambda_161_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou000064_1gr_full_detector.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou0000da_161_1gr_data_fifo.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_logic_s_c0_in_for_cond00004_main_lambda_64_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_dummy_thread_b1_dummy_main_lambda_72_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_forked_b1_forked_main_lambda_80_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pipeline_keep_going22_93_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notexitcond23_130_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B1_branch.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B1_merge.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B2.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B2_stall_region.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_mem_load2_pre_395_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_readdata_reg_load2_pre_0.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_s_c0_in_for_cond6_i_pr0000_main_lambda_201_4gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou0000_main_lambda_366_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou000013_1gr_full_detector.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou0000da_366_1gr_data_fifo.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_logic_s_c0_in_for_cond0000_main_lambda_213_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_dummy_thread_b2_0000_main_lambda_221_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_forked_b2_forked_main_lambda_229_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pipeline_keep_going17_242_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notexitcond18_311_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sync_buffer_p1020000_sync_buffer_275_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B2_branch.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B2_merge.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B3.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B3_stall_region.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B3_branch.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B3_merge.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B4.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B4_stall_region.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B4_branch.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B4_merge.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B5.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B5_stall_region.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_mem_load1_959_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_readdata_reg_load1_2.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_mem_load_935_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_readdata_reg_load_1.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_mem_memdep_1037_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pipeline_keep_going_539_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pipeline_keep_going_523_0gr_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_coalesce_i1_memdep_phi_pop16_676_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_coalesce_i1_0000phi_pop16_523_13_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_forked2531_pop20_573_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_forked2531_pop20_523_2gr_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_forked2628_pop17_625_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_forked2628_pop17_523_5gr_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_notcmp1534_pop24_607_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_notcmp1534_pop24_523_4gr_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_notcmp2030_pop19_643_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i1_notcmp2030_pop19_523_6gr_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i32_pop18_591_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i32_pop18_523_3gr_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i6_fpga_indvars_iv_pop13_555_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i6_fpga_indvars_iv_pop13_523_1gr_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_forked2531_push20_694_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_forked2531_push20_523_14_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_forked2628_push17_712_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_forked2628_push17_523_15_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_memdep_phi_push16_1050_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_memdep_phi_push16_523_30_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notcmp1534_push24_800_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notcmp1534_push24_523_20_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notcmp2030_push19_782_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notcmp2030_push19_523_19_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notexitcond_730_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i1_notexitcond_523_16_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i32_push18_766_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i32_push18_523_18_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i6_fpga_indvars_iv_push13_748_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i6_fpga_ind0000iv_push13_523_17_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_s_c0_in_for_body9_i_s_00006_main_lambda_523_22.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou0000_main_lambda_919_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou000020_1gr_full_detector.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c0_ou0000da_919_1gr_data_fifo.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_logic_s_c0_in_for_body0000_main_lambda_820_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i32_mul_i32_pop21_838_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i32_pop22_867_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i7_k_0_i4_narrowing_pop15_828_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i32_mul_i32_push21_901_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i32_push22_894_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i7_k_0_i4_narrowing_push15_908_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sync_buffer_p1020000_sync_buffer_848_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sync_buffer_p1020000_sync_buffer_877_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_s_c1_in_for_body9_i_s_0000r_main_lambda_523_27.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c1_ou0000main_lambda_1025_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c1_ou000085_1gr_full_detector.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_sfc_exit_s_c1_ou0000a_1025_1gr_data_fifo.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_sfc_logic_s_c1_in_for_body0000_main_lambda_985_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_i32_load2_pop14_994_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pop_p1024_arrayidx18_i33_pop23_1002_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_i32_load2_push14_1016_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_push_p1024_array0000_i33_push23_1009_0gr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B5_merge_reg.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B5_branch.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B5_merge.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B6.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B6_stall_region.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B6_branch.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_B6_merge.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_i_llvm_fpga_pipeline_keep_going_523_0gr_sr.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_loop_limiter_0.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B1_sr_1.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B2_sr_1.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B3_sr_0.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B4_sr_0.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B5_sr_1.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_bb_B6_sr_0.sv" />
+			<FILE name="kernel_hdl/main_lambda/main_lambda_function_cra_agent.sv" />
+		</REQUIREMENTS>
+		<DATA>
+			<INTERFACE port="load1_main_lambda" cosim_name="" type="host" width="64" true_lsu_width="32" burstwidth="1" pipelined="true" addr_space="__global" aspace_id="1024" optype="read" criticality="262143" buffer_location="0" group_id="0" connected_to_agent="0" />
+			<INTERFACE port="load2_pre_main_lambda" cosim_name="" type="host" width="64" true_lsu_width="32" burstwidth="1" pipelined="true" addr_space="__global" aspace_id="1024" optype="read" criticality="8191" buffer_location="0" group_id="0" connected_to_agent="0" />
+			<INTERFACE port="load_main_lambda" cosim_name="" type="host" width="64" true_lsu_width="32" burstwidth="1" pipelined="true" addr_space="__global" aspace_id="1024" optype="read" criticality="262143" buffer_location="0" group_id="0" connected_to_agent="0" />
+			<INTERFACE port="memdep_main_lambda" cosim_name="" type="host" width="64" true_lsu_width="32" burstwidth="1" pipelined="true" addr_space="__global" aspace_id="1024" optype="write" criticality="262143" buffer_location="0" group_id="0" connected_to_agent="0" />
+		</DATA>
+		<KERNEL_ARGS>
+			<ARGUMENT name="arg_c" cosim_name="" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="4" type_qualifier="" access_qualifier="none" type_name="char*" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_a" cosim_name="" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="4" type_qualifier="" access_qualifier="none" type_name="char*" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_b" cosim_name="" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="4" type_qualifier="" access_qualifier="none" type_name="char*" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+		</KERNEL_ARGS>
+		<IPS>
+		</IPS>
+		<PRINTF_FORMAT_STRINGS>
+		</PRINTF_FORMAT_STRINGS>
+		<PRINTF_INTERFACES>
+		</PRINTF_INTERFACES>
+	</KERNEL>
+	</KERNEL_BUNDLE>
+	<GLOBAL_MEM_LATENCY kernel_side_mem_latency="8" arbitration_latency="5" />
+	<STRUCT_TYPE_DEFS>
+		<COMPONENT name="main_lambda">
+		</COMPONENT>
+	</STRUCT_TYPE_DEFS>
+	<KERNEL_INTERCONNECT>
+		<USM_INTERCONNECT value="0" />
+		<GLOBAL_ATOMICS value="0" />
+		<GLOBAL_INTERCONNECT gmem_id="0" name="0" type="1" />
+		<GLOBAL_READS memory="0" aspace="1024" />
+		<GLOBAL_READS memory="0" aspace="1024" />
+		<GLOBAL_READS memory="0" aspace="1024" />
+		<GLOBAL_WRITES memory="0" aspace="1024" />
+	</KERNEL_INTERCONNECT>
+</KERNEL_LIST>

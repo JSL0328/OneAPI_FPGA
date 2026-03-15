@@ -1,0 +1,1 @@
+Compiler Command: aoc -o /tmp/fpga_template-0c801c-8165d2.aocr /tmp/icpx-9521d18549/fpga_template-943941-db8030.spv -sycl -rtl -dep-files=/tmp/icpx-9521d18549/fpga_template.cpp-3079ce.d -output-report-folder=fpga_template.report.prj -g -hardware -target=Agilex7

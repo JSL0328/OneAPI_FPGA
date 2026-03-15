@@ -1,0 +1,2 @@
+USE_ME_VERBATIM:fpga_template_report_di
+main_lambda

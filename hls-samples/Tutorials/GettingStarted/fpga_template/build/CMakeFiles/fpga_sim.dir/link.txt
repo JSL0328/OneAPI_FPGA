@@ -1,0 +1,1 @@
+/opt/intel/oneapi/compiler/2025.0/bin/icpx CMakeFiles/fpga_sim.dir/src/fpga_template.cpp.o -o fpga_template.fpga_sim  -fintelfpga -qactypes -Xssimulation -Xsghdl -Xstarget=Agilex7 -reuse-exe=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/fpga_template.fpga_sim 

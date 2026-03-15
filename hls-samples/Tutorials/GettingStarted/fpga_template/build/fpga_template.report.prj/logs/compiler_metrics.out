@@ -1,0 +1,7 @@
+main_lambda,target_fmax,480
+main_lambda,main_lambda.B1,II,1
+main_lambda,main_lambda.B1,EstimatedFmax,480
+main_lambda,main_lambda.B2,II,1
+main_lambda,main_lambda.B2,EstimatedFmax,480
+main_lambda,main_lambda.B5,II,94
+main_lambda,main_lambda.B5,EstimatedFmax,480
