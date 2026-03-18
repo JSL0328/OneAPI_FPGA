@@ -2,7 +2,7 @@
 
 ## Project Goal
 To implement a systolic array for dense matrix multiplication using Intel OneAPI, 
-and analyse the effect of varying II and matrix size on latency and fMAX using 
+and analyse the effect of varying pipeline properties and matrix size on latency and fMAX using 
 the OneAPI optimization report.
 
 ## What This Project Does
