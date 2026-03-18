@@ -1,1 +1,1 @@
-/opt/intel/oneapi/compiler/2025.0/bin/icpx CMakeFiles/fpga.dir/src/fpga_template.cpp.o -o fpga_template.fpga  -fintelfpga -qactypes -Xshardware -Xstarget=Agilex7 -reuse-exe=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/fpga_template.fpga 
+/opt/intel/oneapi/2025.0/bin/icpx CMakeFiles/fpga.dir/src/fpga_template.cpp.o -o fpga_template.fpga  -fintelfpga -qactypes -Xshardware -Xstarget=Agilex7 -reuse-exe=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/fpga_template.fpga 

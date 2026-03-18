@@ -1,0 +1,21 @@
+{"nodes":[1], "links":[]}
+{"name":"DijkstraNaiveID", "id":1, "type":"kernel", "children":[2, 3, 4, 5, 6, 7, 8]}
+{"name":"DijkstraNaiveID.B0", "id":2, "type":"bb"}
+{"name":"DijkstraNaiveID.B1", "id":3, "type":"bb", "children":[9]}
+{"name":"Cluster 0", "id":9, "type":"cluster"}
+{"name":"DijkstraNaiveID.B2", "id":4, "type":"bb", "children":[16, 17]}
+{"name":"Cluster 1", "id":16, "type":"cluster"}
+{"name":"Cluster 2", "id":17, "type":"cluster"}
+{"name":"DijkstraNaiveID.B3", "id":5, "type":"bb", "children":[24, 27, 32]}
+{"name":"Cluster 3", "id":24, "type":"cluster"}
+{"name":"Cluster 4", "id":27, "type":"cluster"}
+{"name":"Cluster 5", "id":32, "type":"cluster"}
+{"name":"DijkstraNaiveID.B4", "id":6, "type":"bb"}
+{"name":"DijkstraNaiveID.B5", "id":7, "type":"bb", "children":[54, 55, 57, 58, 60, 63]}
+{"name":"Cluster 6", "id":54, "type":"cluster"}
+{"name":"Cluster 7", "id":55, "type":"cluster"}
+{"name":"Cluster 8", "id":57, "type":"cluster"}
+{"name":"Cluster 9", "id":58, "type":"cluster"}
+{"name":"Cluster 10", "id":60, "type":"cluster"}
+{"name":"Cluster 11", "id":63, "type":"cluster"}
+{"name":"DijkstraNaiveID.B6", "id":8, "type":"bb"}

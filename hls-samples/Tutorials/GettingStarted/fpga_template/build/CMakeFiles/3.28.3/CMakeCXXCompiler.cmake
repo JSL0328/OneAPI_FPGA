@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/opt/intel/oneapi/compiler/2025.0/bin/icpx")
+set(CMAKE_CXX_COMPILER "/opt/intel/oneapi/2025.0/bin/icpx")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "IntelLLVM")
 set(CMAKE_CXX_COMPILER_VERSION "2025.0.4")
@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "4.2.1")
 
 
 
-set(CMAKE_AR "/bin/ar")
+set(CMAKE_AR "/usr/bin/ar")
 set(CMAKE_CXX_COMPILER_AR "CMAKE_CXX_COMPILER_AR-NOTFOUND")
-set(CMAKE_RANLIB "/bin/ranlib")
+set(CMAKE_RANLIB "/usr/bin/ranlib")
 set(CMAKE_CXX_COMPILER_RANLIB "CMAKE_CXX_COMPILER_RANLIB-NOTFOUND")
-set(CMAKE_LINKER "/bin/ld")
+set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX )
@@ -79,7 +79,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/intel/oneapi/umf/0.9/include;/opt/intel/oneapi/tbb/2022.0/include;/opt/intel/oneapi/pti/0.10/include;/opt/intel/oneapi/mpi/2021.14/include;/opt/intel/oneapi/mkl/2025.0/include;/opt/intel/oneapi/ippcp/2025.0/include;/opt/intel/oneapi/ipp/2022.0/include;/opt/intel/oneapi/dpl/2022.7/include;/opt/intel/oneapi/dpcpp-ct/2025.0/include;/opt/intel/oneapi/dnnl/2025.0/include;/opt/intel/oneapi/dev-utilities/2025.0/include;/opt/intel/oneapi/dal/2025.0/include;/opt/intel/oneapi/ccl/2021.14/include;/opt/intel/oneapi/compiler/2025.0/opt/compiler/include;/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/opt/intel/oneapi/compiler/2025.0/lib/clang/19/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/intel/oneapi/2025.0/opt/oclfpga/include;/opt/intel/oneapi/dal/2025.0/include;/opt/intel/oneapi/umf/0.9/include;/opt/intel/oneapi/tbb/2022.0/include;/opt/intel/oneapi/pti/0.10/include;/opt/intel/oneapi/mpi/2021.14/include;/opt/intel/oneapi/mkl/2025.0/include;/opt/intel/oneapi/ippcp/2025.0/include;/opt/intel/oneapi/ipp/2022.0/include;/opt/intel/oneapi/dpl/2022.7/include;/opt/intel/oneapi/dpcpp-ct/2025.0/include;/opt/intel/oneapi/dnnl/2025.0/include;/opt/intel/oneapi/dev-utilities/2025.0/include;/opt/intel/oneapi/ccl/2021.14/include;/opt/intel/oneapi/2025.0/include;/opt/intel/oneapi/compiler/2025.0/opt/compiler/include;/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/opt/intel/oneapi/compiler/2025.0/lib/clang/19/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "svml;irng;stdc++;imf;m;gcc_s;gcc;irc;dl;gcc_s;gcc;c;gcc_s;gcc;irc_s")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/intel/oneapi/compiler/2025.0/lib;/opt/intel/oneapi/compiler/2025.0/lib/clang/19/lib/x86_64-unknown-linux-gnu;/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib;/opt/intel/oneapi/compiler/2025.0/opt/compiler/lib;/lib;/opt/intel/oneapi/tcm/1.2/lib;/opt/intel/oneapi/umf/0.9/lib;/opt/intel/oneapi/tbb/2022.0/lib/intel64/gcc4.8;/opt/intel/oneapi/pti/0.10/lib;/opt/intel/oneapi/mpi/2021.14/lib;/opt/intel/oneapi/mkl/2025.0/lib;/opt/intel/oneapi/ippcp/2025.0/lib;/opt/intel/oneapi/ipp/2022.0/lib;/opt/intel/oneapi/dnnl/2025.0/lib;/opt/intel/oneapi/dal/2025.0/lib;/opt/intel/oneapi/ccl/2021.14/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/intel/oneapi/compiler/2025.0/lib;/opt/intel/oneapi/compiler/2025.0/lib/clang/19/lib/x86_64-unknown-linux-gnu;/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib;/opt/intel/oneapi/compiler/2025.0/opt/compiler/lib;/lib;/opt/intel/oneapi/2025.0/lib;/opt/intel/oneapi/tcm/1.2/lib;/opt/intel/oneapi/umf/0.9/lib;/opt/intel/oneapi/tbb/2022.0/lib/intel64/gcc4.8;/opt/intel/oneapi/pti/0.10/lib;/opt/intel/oneapi/mpi/2021.14/lib;/opt/intel/oneapi/mkl/2025.0/lib;/opt/intel/oneapi/ippcp/2025.0/lib;/opt/intel/oneapi/ipp/2022.0/lib;/opt/intel/oneapi/dnnl/2025.0/lib;/opt/intel/oneapi/dal/2025.0/lib;/opt/intel/oneapi/ccl/2021.14/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

@@ -69,10 +69,10 @@ include CMakeFiles/displayReportCompileCommands.dir/progress.make
 CMakeFiles/displayReportCompileCommands:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) ""
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "To compile manually:"
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/compiler/2025.0/bin/icpx -I../../../../include -fintelfpga -Wall -qactypes -DFPGA_HARDWARE -c ../src/fpga_template.cpp -o CMakeFiles/report.dir/src/fpga_template.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/2025.0/bin/icpx -I../../../../include -fintelfpga -Wall -qactypes -DFPGA_HARDWARE -c ../src/fpga_template.cpp -o CMakeFiles/report.dir/src/fpga_template.cpp.o"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold ""
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "To link manually:"
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/compiler/2025.0/bin/icpx -fintelfpga -Xshardware -Xstarget=Agilex7 -fsycl-link=early -o fpga_template.report CMakeFiles/report.dir/src/fpga_template.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/2025.0/bin/icpx -fintelfpga -Xshardware -Xstarget=Agilex7 -fsycl-link=early -o fpga_template.report CMakeFiles/report.dir/src/fpga_template.cpp.o"
 	/usr/bin/cmake -E cmake_echo_color --cyan 
 
 displayReportCompileCommands: CMakeFiles/displayReportCompileCommands

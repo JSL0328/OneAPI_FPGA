@@ -69,10 +69,10 @@ include CMakeFiles/displaySimulationCompileCommands.dir/progress.make
 CMakeFiles/displaySimulationCompileCommands:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) ""
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "To compile manually:"
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/compiler/2025.0/bin/icpx -I../../../../include -fintelfpga -Wall -qactypes -Xssimulation -DFPGA_SIMULATOR -c ../src/fpga_template.cpp -o CMakeFiles/fpga_sim.dir/src/fpga_template.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/2025.0/bin/icpx -I../../../../include -fintelfpga -Wall -qactypes -Xssimulation -DFPGA_SIMULATOR -c ../src/fpga_template.cpp -o CMakeFiles/fpga_sim.dir/src/fpga_template.cpp.o"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold ""
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "To link manually:"
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/compiler/2025.0/bin/icpx -fintelfpga -qactypes -Xssimulation -Xsghdl -Xstarget=Agilex7 -reuse-exe=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/fpga_template.fpga_sim -o fpga_template.fpga_sim CMakeFiles/fpga_sim.dir/src/fpga_template.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "/opt/intel/oneapi/2025.0/bin/icpx -fintelfpga -qactypes -Xssimulation -Xsghdl -Xstarget=Agilex7 -reuse-exe=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/fpga_template.fpga_sim -o fpga_template.fpga_sim CMakeFiles/fpga_sim.dir/src/fpga_template.cpp.o"
 	/usr/bin/cmake -E cmake_echo_color --cyan 
 
 displaySimulationCompileCommands: CMakeFiles/displaySimulationCompileCommands

@@ -73,15 +73,15 @@ CMakeFiles/fpga.dir/src/fpga_template.cpp.o: CMakeFiles/fpga.dir/flags.make
 CMakeFiles/fpga.dir/src/fpga_template.cpp.o: /home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/src/fpga_template.cpp
 CMakeFiles/fpga.dir/src/fpga_template.cpp.o: CMakeFiles/fpga.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fpga.dir/src/fpga_template.cpp.o"
-	/opt/intel/oneapi/compiler/2025.0/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fpga.dir/src/fpga_template.cpp.o -MF CMakeFiles/fpga.dir/src/fpga_template.cpp.o.d -o CMakeFiles/fpga.dir/src/fpga_template.cpp.o -c /home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/src/fpga_template.cpp
+	/opt/intel/oneapi/2025.0/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fpga.dir/src/fpga_template.cpp.o -MF CMakeFiles/fpga.dir/src/fpga_template.cpp.o.d -o CMakeFiles/fpga.dir/src/fpga_template.cpp.o -c /home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/src/fpga_template.cpp
 
 CMakeFiles/fpga.dir/src/fpga_template.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fpga.dir/src/fpga_template.cpp.i"
-	/opt/intel/oneapi/compiler/2025.0/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/src/fpga_template.cpp > CMakeFiles/fpga.dir/src/fpga_template.cpp.i
+	/opt/intel/oneapi/2025.0/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/src/fpga_template.cpp > CMakeFiles/fpga.dir/src/fpga_template.cpp.i
 
 CMakeFiles/fpga.dir/src/fpga_template.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fpga.dir/src/fpga_template.cpp.s"
-	/opt/intel/oneapi/compiler/2025.0/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/src/fpga_template.cpp -o CMakeFiles/fpga.dir/src/fpga_template.cpp.s
+	/opt/intel/oneapi/2025.0/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ll4420/phys70071/oneapi-project/hls-samples/Tutorials/GettingStarted/fpga_template/src/fpga_template.cpp -o CMakeFiles/fpga.dir/src/fpga_template.cpp.s
 
 # Object files for target fpga
 fpga_OBJECTS = \
