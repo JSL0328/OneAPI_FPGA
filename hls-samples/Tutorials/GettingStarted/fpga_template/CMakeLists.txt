@@ -19,7 +19,22 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 ###############################################################################
 ### Customize these build variables
 ###############################################################################
-set(SOURCE_FILES src/fpga_template.cpp)
+# set(SOURCE_FILES src/fpga_template.cpp)
+# accepts 3 different versions of the design, set by cmake -DVERSION=<version_name>
+if(NOT DEFINED VERSION)
+    set(VERSION FINAL)
+endif()
+
+if(VERSION STREQUAL "NAIVE")
+    set(SOURCE_FILES src/dijkstra_naive.cpp)
+elseif(VERSION STREQUAL "PARALLEL")
+    set(SOURCE_FILES src/dijkstra_parallel.cpp)
+else()
+    set(SOURCE_FILES src/fpga_template.cpp)
+endif()
+
+message(STATUS "Building version: ${VERSION} (${SOURCE_FILES})")
+
 set(TARGET_NAME fpga_template)
 
 # Use cmake -DFPGA_DEVICE=<board-support-package>:<board-variant> to choose a
