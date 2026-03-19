@@ -3,7 +3,7 @@
 #include <sycl/sycl.hpp>
 #include "exception_handler.hpp"
 
-class DijkstraOptimisedID;
+class DijkstraParallelID;
 
 constexpr int N = 11;
 constexpr int INF = 1e9;
@@ -22,27 +22,12 @@ constexpr int graph[N][N] = {
     {0, 0, 0, 0, 0, 0, 3, 2, 0, 3, 0}
 };
 
-struct DijkstraOptimised {
-    int *const out_dist;
-    int *const in_g;
+struct DijkstraParallel {
+    int *const g;
+    int *const dist;
+    bool *const visited;
 
     void operator()() const {
-        // Copy graph into on-chip local memory (BRAM)
-        int g_local[N][N];
-        for (int i = 0; i < N; i++)
-            for (int j = 0; j < N; j++)
-                g_local[i][j] = in_g[i*N + j];
-
-        // Declare dist and visited as on-chip registers
-        [[intel::fpga_register]] int dist[N];
-        [[intel::fpga_register]] bool visited[N];
-
-        for (int i = 0; i < N; i++) {
-            dist[i] = INF;
-            visited[i] = false;
-        }
-        dist[0] = 0;
-
         for (int count = 0; count < N-1; count++) {
             // Find unvisited node with shortest distance (sequential)
             int u = -1;
@@ -52,16 +37,12 @@ struct DijkstraOptimised {
 
             visited[u] = true;
 
-            // Update neighbour distances in parallel using on-chip memory
+            // Update neighbour distances in parallel
             #pragma unroll
             for (int v = 0; v < N; v++)
-                if (g_local[u][v] && !visited[v] && dist[u] + g_local[u][v] < dist[v])
-                    dist[v] = dist[u] + g_local[u][v];
+                if (g[u*N + v] && !visited[v] && dist[u] + g[u*N + v] < dist[v])
+                    dist[v] = dist[u] + g[u*N + v];
         }
-
-        // Write results back to USM once at the end
-        for (int i = 0; i < N; i++)
-            out_dist[i] = dist[i];
     }
 };
 
@@ -90,32 +71,35 @@ int main() {
                   << device.get_info<sycl::info::device::name>().c_str()
                   << std::endl;
 
-        // Only two USM allocations needed
-        int *in_g     = sycl::malloc_shared<int>(N*N, q);
-        int *out_dist = sycl::malloc_shared<int>(N, q);
+        int *g        = sycl::malloc_shared<int>(N*N, q);
+        int *dist     = sycl::malloc_shared<int>(N, q);
+        bool *visited = sycl::malloc_shared<bool>(N, q);
 
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < N; i++) {
+            dist[i] = INF;
+            visited[i] = false;
             for (int j = 0; j < N; j++)
-                in_g[i*N + j] = graph[i][j];
+                g[i*N + j] = graph[i][j];
+        }
+        dist[0] = 0;
 
-        q.single_task<DijkstraOptimisedID>(
-            DijkstraOptimised{out_dist, in_g}
-        ).wait();
+        q.single_task<DijkstraParallelID>(DijkstraParallel{g, dist, visited}).wait();
 
         const int expected[N] = {0, 4, 2, 7, 7, 8, 7, 8, 9, 11, 10};
 
         passed = true;
         std::cout << "Shortest distances from node 0:" << std::endl;
         for (int i = 0; i < N; i++) {
-            std::cout << "Node " << i << ": " << out_dist[i]
+            std::cout << "Node " << i << ": " << dist[i]
                       << " (expected " << expected[i] << ")" << std::endl;
-            if (out_dist[i] != expected[i]) passed = false;
+            if (dist[i] != expected[i]) passed = false;
         }
 
         std::cout << (passed ? "PASSED" : "FAILED") << std::endl;
 
-        sycl::free(in_g, q);
-        sycl::free(out_dist, q);
+        sycl::free(g, q);
+        sycl::free(dist, q);
+        sycl::free(visited, q);
 
     } catch (sycl::exception const &e) {
         std::cerr << "Caught a SYCL host exception:\n" << e.what() << "\n";
